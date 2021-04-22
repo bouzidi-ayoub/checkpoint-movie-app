@@ -1,0 +1,41 @@
+body {
+  background-color: #8da07ea9;
+}
+
+.NavBar {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  display: flex;
+  width: 100;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  flex-direction: row-reverse;
+}
+.AddBtn,
+Button {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+
+  margin-right: 1rem;
+}
+.Stars {
+  display: flex;
+  width: 30%;
+
+  margin-left: 4rem;
+}
+.Stars,
+Button {
+  margin-left: 1rem;
+}
+.Title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffff;
+}
+
+.Title:hover {
+  color: #0c0c0b;
+}
