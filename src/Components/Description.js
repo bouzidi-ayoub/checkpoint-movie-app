@@ -3,19 +3,21 @@ import React, { useState, useEffect } from "react";
 import {  useParams } from "react-router-dom";
 import MovieList from "./MovieList";
 
-const Description = ({ movie }) => {
+const Description = ({ movies }) => {
   const { id } = useParams();
 
-  const [film, setFilm] = useState(movie);
+  const [film, setFilm] = useState("");
 
   useEffect(() => {
-    const newFilm = MovieList.filter((movie) => movie.ID === id);
+    const newFilm = movies.filter((movie) => movie.ID === id);
     setFilm(newFilm);
   }, [id]);
 
   return (
     <>
-      {film.map((f) => (
+      {
+        console.log(film)}
+      {film && film.map((f) => (
         <div style={{ backgroundColor: "#ffd700" }}>
          
 
